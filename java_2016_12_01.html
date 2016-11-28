@@ -94,10 +94,10 @@ pre > code {
 blockquote {
     padding: 2px 5px;
     border-left-style: solid;
-    border-left-width: 10px;
+    border-left-width: 8px;
     margin: 0 0 20px;
     background: none repeat scroll 0 0 rgba(102, 128, 153, .25);
-    border-left: 5px solid #989A9C;
+    border-left: 5px solid lightgray;
 }
 table {
     border-collapse: collapse;
@@ -122,6 +122,18 @@ table tr:nth-child(2n) {
 }
 thead {
     background-color: #c9ccca;
+}
+
+blockquote {
+    background: none repeat scroll 0 0 rgba(230, 230, 230, .3);
+}
+
+blockquote > blockquote {
+    background: none repeat scroll 0 0 rgba(208, 208, 208, .2);
+}
+
+blockquote > blockquote > h6 {
+    background-color: transparent;
 }
 /*
 
@@ -233,16 +245,61 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <ul>
 <li>许令明/男/1992</li>
 <li>本科/重庆大学化工系</li>
-<li>工作年限：1.5年</li>
+<li>工作年限：2年</li>
 <li>Github：<a href="http://github.com/jackdon">http://github.com/jackdon</a></li>
 <li>期望职位：Java开发工程师</li>
 <li>期望城市：上海</li>
 </ul>
 <hr>
+<h1>技能清单</h1>
+<ul>
+<li>语言：Java/Nodejs</li>
+<li>Java后端框架：Spring/iBaitis/Hibernate/Apache Shiro/Quarz/ActiveMQ/dubbo/tbpm/Activiti</li>
+<li>前端框架(库)：jQuery/Easy UI/Bootstrap/AngularJS/Handlebars/Markdownjs</li>
+<li>Javascript栈：npm/Yeoman(yo)/Express/mongoose/Bower/Gulp/Grunt</li>
+<li>数据库相关：MySQL/Oracle/Redis/Mongodb/SQLite</li>
+</ul>
+<hr>
 <h1>工作经历</h1>
+<h3>丰趣海淘 ( 2016年6月 ~ 2016年12月 )</h3>
+<h4>工单系统（Ticket）</h4>
+<p>customer是基于dubbo架构驱动的分布式微服务系统,主要用于帮助公司核心业务系统(订单,供应链)收集业务异常,帮助业务快速定位解决问题。</p>
+<blockquote>
+<p>主要工作内容</p>
+<blockquote>
+<h6>日常开发维护。</h6>
+</blockquote>
+<p>总结</p>
+<blockquote>
+<p>熟悉并学习了工单系统业务流程，深入的学习了分布式微服务框架dubbo的应用，Redis缓存机制及分布式锁实现机制，学习并了解的状态机的原理及应用实践。</p>
+</blockquote>
+</blockquote>
+<h4>时效预警项目</h4>
+<p>项目用于解决供应链系统出库单状态流转时效全路由监控,统计。为业务人员分析系统时效提供便捷。</p>
+<blockquote>
+<p>主要工作内容</p>
+<blockquote>
+<p>系统时效数据统计监控后台算法设计开发。
+前端开发工作。
+总结
+难点在于把控时效性数据统计的统计周期，需要程序单个周期的数据量及实际业务量间取得平衡。开发中使用了动态配置，程序能够根据实际业务情况动
+态调整配置，使程序达到最佳状态。</p>
+</blockquote>
+</blockquote>
+<h4>极致客服项目</h4>
+<p>该项目基于原工单系统，集成工作流引擎Activiti，用于提供工单系统处理工单流程化操作功能。</p>
+<blockquote>
+<p>主要工作内容</p>
+<blockquote>
+<p>Actitivi流程引擎spring集成。
+基于Activiti服务及工单系统业务需求，提供Service API接口定义和实现，主要提供bpmn流程文件动态部署功能，工作流处理功能，流程图动态绘制，
+任务群组化分配管理。
+前端开发工作。</p>
+</blockquote>
+</blockquote>
 <h3>上海华振物流有限公司 （ 2015年6月 ~ 2016年5月 ）</h3>
 <h4>TMS系统日常开发及版本控制</h4>
-<p>TMS(物流运输管理系统)是基于传统的C/S架构的企业应用，支撑公司主营物流运输管理业务。系统涉及技术包括：Serverlet，ActiveMQ，WebService，Quartz，C端使用Swing实现。</p>
+<p>TMS(物流运输管理系统)是基于传统的C/S架构的企业应用，支撑公司主营物流运输管理业务。系统涉及技术包括：Serverlet，ActiveMQ，WebService，Quartz。</p>
 <blockquote>
 <p>主要工作内容</p>
 <blockquote>
@@ -298,17 +355,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <hr>
 <h1>开源项目和作品</h1>
 <p>对于一个充满热情而又年轻的程序员来说，我正在<a href="http://github.com/jackdon">Github</a>上码自己美好的家园<code>^_^</code>。</p>
-<hr>
-<h1>技能清单</h1>
-<p>以下均为我熟练使用的技能</p>
-<ul>
-<li>Web开发：Java/Nodejs</li>
-<li>服务端框架：Spring/iBaitis/Hibernate/Apache Shiro/Quarz/ActiveMQ/Express</li>
-<li>前端框架(库)：jQuery/Bootstrap/AngularJS/Handlebars/Markdownjs</li>
-<li>前端工具：Bower/Gulp</li>
-<li>数据库相关：MySQL/Oracle/Mongodb/SQLite</li>
-<li>版本管理、文档和自动化工具：Svn/Git/Grunt</li>
-</ul>
 <hr>
 <h1>致谢</h1>
 <p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>
