@@ -96,8 +96,8 @@ blockquote {
     border-left-style: solid;
     border-left-width: 8px;
     margin: 0 0 20px;
-    background: none repeat scroll 0 0 rgba(208, 208, 208, .25);
-    border-left: 5px solid lightgray;
+    background: none repeat scroll 0 0 rgba(248, 248, 248, 0.95);
+    border-left: 2px solid lightgray;
 }
 table {
     border-collapse: collapse;
@@ -125,11 +125,11 @@ thead {
 }
 
 blockquote {
-    background: none repeat scroll 0 0 rgba(230, 230, 230, .3);
+    background: none repeat scroll 0 0 rgba(248, 248, 248, 0.95);
 }
 
 blockquote > blockquote {
-    background: none repeat scroll 0 0 rgba(230, 230, 230, .3);
+    background: none repeat scroll 0 0 rgba(248, 248, 248, 0.85);
 }
 
 blockquote > blockquote > h6 {
