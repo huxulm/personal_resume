@@ -1,0 +1,70 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{许令明}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86) 18616777015}{huxulm@gmail.com}{后端研发工程师}{GitHub @huxulm}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{个人简介}
+工作踏实负责，专注服务器(后端)技术研发，重视基础学习，关注新技术
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{重庆大学},化学工程与工艺,\textit{工学学士}}{2011.9 - 2015.6}
+% \section{\faCogs\ IT 技能}
+\section{编程技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言}: Golang, Shell/Bash, Java, Python, JavaScript
+  \item \textbf{数据库}: 关系型(MySQL、PG), KV类, NoSQL
+  \item \textbf{操作系统}: Linux/Unix
+  \item \textbf{其他}: 系统架构、Kubernetes、CI/CD(DevOps/GitOps)
+\end{itemize}
+
+% \end{itemize}
+
+\section{工作经历}
+\datedsubsection{\textbf{中科院新疆天文台 | XAO}  工程师}{2019.3-至今}
+\begin{itemize}
+  \item 参与射电天文望远镜控制系统服务端系统架构设计, 主要包括: OAuth2+LDAP开发认证系统、go-GRPC开发微服务核心组件、grpc2http网关设计开发; 搭建Kubernetes集群, 保障系统稳定运行; Gitlab+ArgoCD实现系统自动化持续集成部署
+  \item 参与射电天文望远镜控制系统前端架构设计, 主要包括: 设计开发基于网页的控制前端(ReactJS)并协同认证系统与后端API实现望远镜远程能力
+  \item kubernetes集群更新与维护, 基于Gitlab和ArgoCD在集群中搭建了一套高效的CI/CD系统
+\end{itemize}
+
+\datedsubsection{\textbf{实投(上海)互联网金融信息服务有限公司 }    系统架构工程师}{2017.1-2019.2}
+\begin{itemize}
+  \item 微服务化: 将原有业务系统拆分解耦,基于Dubbo框架进行微服务改造, 搭建容器化应用管理平台, 使用kubernetes对服务器集群管理
+  \item 参与支付系统设计师开发: API设计、支付系统开放平台、文档编写
+  \item 后台管理系统: 在原有系统业务基础上,重构了一套前后端分离的后台管理系统
+\end{itemize}
+
+\datedsubsection{\textbf{丰趣海淘网络科技有限公司}  JAVA研发工程师}{2016.6-2016.12}
+\begin{itemize}
+  \item 负责\textbf{工单系统（Ticket)} {Ticket是基于dubbo架构驱动的分布式微服务系统,主要用于帮助公司订单,供应链等系统收集业务异常,帮助业务快速定位解决问题。}
+  \item 参与开发时效预警项目,用于解决供应链系统出库单状态流转时效全路由监控,统计。为业务人员分析系统时效提供便捷。
+\end{itemize}
+
+\datedsubsection{\textbf{上海华振物流有限公司}  JAVA研发工程师}{2015.6-2016.5}
+\begin{itemize}
+  \item 参与物流业务系统日常开发维护
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
